@@ -1,4 +1,4 @@
-# abhay.github.io
+# sychonet.github.io
 My personal website for sharing opinions, stories, experiences and ideas. I decided to start this project as I need a place where I can archive all the knowledge and experiences that I'm gaining on a day to day basis. Here, I will also be discussing about some of my original ideas on which I'm currently working or want to work in near future. 
 This website is powered by [Jekyll](https://jekyllrb.com/) and hosted on [Github Pages](https://pages.github.com/). I decided to use this stack to start my personal website because there is absolutely no cost associated with it and I have full control over my content which is residing in my git repository. 
 To understand the code and folder structure for this project you need to have a basic understanding of some very basic fundamentals about Jekyll and Ruby programming language. You should not take more than a day to understand them from the [official Jekyll docs](https://jekyllrb.com/docs/).
