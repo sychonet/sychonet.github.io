@@ -1,0 +1,14 @@
+- name: Home
+  link: /
+- name: About
+  link: /about.html
+- name: Notion
+  link: /notion.html
+- name: Stories
+  link: /stories.html
+- name: Ideas
+  link: /ideas.html
+- name: Projects
+  link: /projects.html
+- name: Open Source
+  link: /opensource.html
