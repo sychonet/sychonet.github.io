@@ -1,0 +1,29 @@
+---
+layout: homepage
+title: Abhay Joshi | Notion, Stories, Projects, Ideas, Open Source
+firstName: Abhay
+lastName: Joshi
+address: B-104, Block B, Sector 71, Noida, UP, India-201307
+email: sychonet@gmail.com
+mobile: 918745051022
+description: Driven technical architect with 8 years of success in conceptualizing technical solutions and system development environments. Focused on working closely with clients to determine technical project objectives, specifications and solutions. Detail-oriented in coding and testing the functionality of deliverables.
+---
+<div class="mh-100 col-sm-9 p-5 d-flex flex-column justify-content-center">
+    <div id="home-name">
+    <span class="font-color-secondary">{{ page.firstName | upcase }}</span>
+    <span class="font-color-primary">{{ page.lastName | upcase }}</span>
+    </div>
+    <div class="font-color-secondary" id="home-address">
+    {{ page.address | upcase }} | +{{ page.mobile }} | {{ page.email | upcase }}
+    </div>
+    <div class="text-justify font-color-secondary pt-4" id="home-description">
+        {{ page.description }}
+    </div>
+    <div class="d-flex flex-row justify-content-left pt-3">
+        <i class="social-icons p-2 bi bi-linkedin"></i>
+        <i class="social-icons p-2 bi bi-github"></i>
+        <i class="social-icons p-2 bi bi-git"></i>
+        <i class="social-icons p-2 bi bi-twitter"></i>
+        <i class="social-icons p-2 bi bi-facebook"></i>
+    </div>
+</div> 
