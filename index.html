@@ -14,14 +14,22 @@ description: Driven technical architect with 8 years of success in conceptualizi
     <span class="font-color-primary">{{ page.lastName | upcase }}</span>
     </div>
     <div class="font-color-secondary" id="home-address">
-    {{ page.address | upcase }} | +{{ page.mobile }} | {{ page.email | upcase }}
+        <div class="d-flex align-items-center">
+            <i class="address-icon pe-3 bi bi-house-heart-fill"></i> <span>{{ page.address | upcase }}</span>
+        </div>
+        <div class="d-flex align-items-center">
+            <i class="address-icon pe-3 bi bi-telephone-fill"></i>  </span>+{{ page.mobile }}</span>
+        </div>
+        <div class="d-flex align-items-center">
+            <i class="address-icon pe-3 bi bi-envelope-paper-fill"></i> <span>{{ page.email }}</span>
+        </div>
     </div>
     <div class="font-color-secondary pt-4 text-align-justify" id="home-description">
         {{ page.description }}
     </div>
     <div class="d-flex flex-row justify-content-left pt-3">
         {% for item in site.data.social %}
-            <a href="{{ item.link }}"><i class="social-icons pe-4 bi {{ item.icon }}"></i></a>
+            <a href="{{ item.link }}"><i class="social-icon pe-4 bi {{ item.icon }}"></i></a>
         {% endfor %}
     </div>
 </div> 
