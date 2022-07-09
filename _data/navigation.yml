@@ -1,7 +1,7 @@
 - name: Home
   link: /
-- name: About
-  link: /about.html
+- name: About Me
+  link: /aboutme.html
 - name: Notion
   link: /notion.html
 - name: Stories
