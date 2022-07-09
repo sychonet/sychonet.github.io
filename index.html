@@ -16,14 +16,12 @@ description: Driven technical architect with 8 years of success in conceptualizi
     <div class="font-color-secondary" id="home-address">
     {{ page.address | upcase }} | +{{ page.mobile }} | {{ page.email | upcase }}
     </div>
-    <div class="text-justify font-color-secondary pt-4" id="home-description">
+    <div class="font-color-secondary pt-4 text-align-justify" id="home-description">
         {{ page.description }}
     </div>
     <div class="d-flex flex-row justify-content-left pt-3">
-        <i class="social-icons p-2 bi bi-linkedin"></i>
-        <i class="social-icons p-2 bi bi-github"></i>
-        <i class="social-icons p-2 bi bi-git"></i>
-        <i class="social-icons p-2 bi bi-twitter"></i>
-        <i class="social-icons p-2 bi bi-facebook"></i>
+        {% for item in site.data.social %}
+            <a href="{{ item.link }}"><i class="social-icons pe-4 bi {{ item.icon }}"></i></a>
+        {% endfor %}
     </div>
 </div> 

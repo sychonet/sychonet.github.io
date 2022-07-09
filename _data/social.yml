@@ -1,0 +1,15 @@
+- name: LinkedIn
+  icon: bi-linkedin 
+  link: https://www.linkedin.com/in/sychonet
+- name: Github
+  icon: bi-github
+  link: https://https://github.com/sychonet
+- name: Gitlab
+  icon: bi-git
+  link: https://https://gitlab.com/sychonet
+- name: Twitter
+  icon: bi-twitter
+  link: https://twitter.com/sychonet_abhay
+- name: Facebook
+  icon: bi-facebook
+  link: https://www.facebook.com/sychonet
