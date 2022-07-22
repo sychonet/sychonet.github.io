@@ -1,16 +1,24 @@
-<div class="p-2 mh-100 col-sm-3 sidebar text-white d-flex flex-column justify-content-center">
-    <div class="text-center">
+<div class="col-md-3 sidebar text-white d-flex flex-column justify-content-center">
+    <div id="profile-pic-container" class="pb-5 mx-auto">
         <img id="profile-pic" class="rounded-circle" src="/assets/images/profile_sketch.png"/> 
     </div>
-    <nav class="pt-5 text-center">
-        <ul class="nav flex-column">
-            {% for item in site.data.navigation %}
-                <li class="nav-item" {% if page.url == item.link %}id="current-nav-li"{% endif %}>
-                    <a href="{{ item.link }}" class="nav-link text-white" {% if page.url != item.link %}id="not-current-nav-li"{% endif %}>
-                        {{ item.name | upcase }}
-                    </a>
-                </li>
-            {% endfor %}
-        </ul>  
-    </nav> 
+    <nav class="navbar navbar-expand-sm" role="navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <ul class="navbar-nav flex-column mx-auto text-center">
+                    {% for item in site.data.navigation %}
+                        <li class="nav-item" {% if page.url == item.link %}id="current-nav-li"{% endif %}>
+                            <a href="{{ item.link }}" class="nav-link text-white" {% if page.url != item.link %}id="not-current-nav-li"{% endif %}>
+                                {{ item.name | upcase }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul> 
+            </div>
+        </div> 
+    </nav>
 </div>
