@@ -2,13 +2,19 @@
   link: /
 - name: About Me
   link: /aboutme.html
-- name: Notions
-  link: /notions.html
-- name: Stories
-  link: /stories.html
 - name: Ideas
   link: /ideas.html
 - name: Projects
   link: /projects.html
+- name: Notions
+  link: /notions.html
+- name: Books
+  link: /books.html
+- name: Publications
+  link: /publications.html
+- name: Patents
+  link: /patents.html
+- name: Stories
+  link: /stories.html
 - name: Open Source
   link: /opensource.html
