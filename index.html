@@ -10,30 +10,34 @@ pageDescription: Personal potfolio website of Abhay Joshi where he shares his no
 myDescription: Driven full-stack software engineer with 8 years of success in conceptualizing and implementing technical solutions and system development environments. Focused on working closely with clients to determine technical project objectives, specifications and solutions. Detail-oriented in coding and testing the functionality of deliverables.
 ---
 
-<div id="home-name">
-    <span class="font-color-secondary">{{ page.firstName | upcase }}</span>
-    <span class="font-color-primary">{{ page.lastName | upcase }}</span>
-</div>
-<div class="font-color-secondary" id="home-address">
-    <div class="d-flex align-items-center">
-        <i class="address-icon pe-3 bi bi-house-heart-fill"></i> <span>{{ page.address | upcase }}</span>
+<div class="col-md-9 p-4 d-flex flex-lg-column justify-content-center">
+    <div class="col">
+        <div id="home-name">
+            <span class="font-color-secondary">{{ page.firstName | upcase }}</span>
+            <span class="font-color-primary">{{ page.lastName | upcase }}</span>
+        </div>
+        <div class="font-color-secondary" id="home-address">
+            <div class="d-flex align-items-center">
+                <i class="address-icon pe-3 bi bi-house-heart-fill"></i> <span>{{ page.address | upcase }}</span>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="address-icon pe-3 bi bi-telephone-fill"></i> <a href="tel:{{ page.mobile }}">+{{ page.mobile }}</a>
+            </div>
+            
+            <div class="d-flex align-items-center">
+                <i class="address-icon pe-3 bi bi-envelope-paper-fill"></i> <a href="mailto:{{ page.email }}">{{ page.email }}</a>
+            </div>
+        </div>
+        <div class="font-color-secondary pt-4 text-align-justify" id="home-description">
+            {{ page.myDescription }}
+        </div>
+        <div class="font-color-secondary pt-4 text-align-justify" id="home-description">
+            Well, that's just my professional side. To know me better, check the <b><a href="aboutme.html">about me</a></b> section.
+        </div>
+        <div class="d-flex flex-row justify-content-left pt-4 pb-3">
+            {% for item in site.data.social %}
+                <a href="{{ item.link }}" target="_blank"><i class="social-icon pe-4 bi {{ item.icon }}"></i></a>
+            {% endfor %}
+        </div>
     </div>
-    <div class="d-flex align-items-center">
-        <i class="address-icon pe-3 bi bi-telephone-fill"></i> <a href="tel:{{ page.mobile }}">+{{ page.mobile }}</a>
-    </div>
-    
-    <div class="d-flex align-items-center">
-        <i class="address-icon pe-3 bi bi-envelope-paper-fill"></i> <a href="mailto:{{ page.email }}">{{ page.email }}</a>
-    </div>
-</div>
-<div class="font-color-secondary pt-4 text-align-justify" id="home-description">
-    {{ page.myDescription }}
-</div>
-<div class="font-color-secondary pt-4 text-align-justify" id="home-description">
-    Well, that's just my professional side. To know me better, check the <b><a href="aboutme.html">about me</a></b> section.
-</div>
-<div class="d-flex flex-row justify-content-left pt-4 pb-3">
-    {% for item in site.data.social %}
-        <a href="{{ item.link }}" target="_blank"><i class="social-icon pe-4 bi {{ item.icon }}"></i></a>
-    {% endfor %}
 </div>
